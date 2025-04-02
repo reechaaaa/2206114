@@ -4,7 +4,7 @@ A full-stack application for fetching different types of numbers from a third-pa
 
 * output Screenshot
 
-![Average Calculator Microservice Screenshot](./screenshots/app-screenshot.png)
+![Average Calculator Microservice Screenshot](./image.png)
 
 * Features
 
