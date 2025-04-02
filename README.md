@@ -28,24 +28,4 @@ The application integrates with the following third-party APIs:
 
 * Directory Structure
 
-
-average-calculator-microservice/
-├── frontend/
-│   ├── public/
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── NumberDisplay.js
-│   │   │   └── NumberSelector.js
-│   │   ├── services/
-│   │   │   └── api.js
-│   │   ├── App.js
-│   │   ├── App.css
-│   │   └── index.js
-│   └── package.json
-├── backend/
-│   ├── server.js
-│   └── package.json
-└── screenshots/
-    └── app-screenshot.png
-```
-
+![directory structure](./image2.png)
