@@ -1,0 +1,55 @@
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.number-selector {
+  margin-bottom: 20px;
+}
+
+.type-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.type-buttons button {
+  padding: 8px 16px;
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.type-buttons button.active {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.number-display {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 4px;
+}
+
+.window-section, .average-section {
+  margin-bottom: 15px;
+}
+
+.window-section h4, .average-section h4 {
+  margin-bottom: 5px;
+}
+
+.loading {
+  color: #007bff;
+  margin: 20px 0;
+}
+
+.error {
+  color: #dc3545;
+  margin: 20px 0;
+}
