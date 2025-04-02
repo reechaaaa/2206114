@@ -16,13 +16,14 @@ function App() {
       setError(null);
       try {
         const data = await fetchNumbers(selectedType);
-        if (data) {
+        
+        if (data && !data.error) {
           setResponseData(data);
         } else {
-          setError('Failed to fetch data');
+          setError(data?.error || 'Failed to fetch data from server');
         }
       } catch (err) {
-        setError(err.message);
+        setError(err.message || 'Network error. Is the backend running?');
       } finally {
         setIsLoading(false);
       }
@@ -39,8 +40,15 @@ function App() {
         onTypeChange={setSelectedType} 
       />
       
-      {isLoading && <div className="loading">Loading...</div>}
-      {error && <div className="error">Error: {error}</div>}
+      {isLoading && <div className="loading">Loading numbers...</div>}
+      {error && (
+        <div className="error">
+          Error: {error}
+          <button onClick={() => window.location.reload()} className="retry-btn">
+            Retry
+          </button>
+        </div>
+      )}
       {responseData && <NumberDisplay data={responseData} />}
     </div>
   );
